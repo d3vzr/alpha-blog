@@ -1,2 +1,10 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+.center{text-align:center;}
+.homebg{
+  height:70vh;
+  background:asset-url('iloveror.jpg') no-repeat center center;
+  background-size:cover;
+
+}
