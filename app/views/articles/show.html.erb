@@ -23,10 +23,10 @@
   <% end %>
   <div class="article-action">
     <% if logged_in? && ( current_user == @article.user || current_user.admin? ) %>
-      <%= link_to 'Edit' , edit_article_path(@article), class: "btn btn-xs btn-success" %>
+      <%= link_to 'Edit' , edit_article_path(@article), class: "btn btn-xs btn-success  btn-raised" %>
       <%= link_to 'Delete this article' , article_path(@article),method: :delete,data: {confirm:"Are you sure ?"}, class: "btn btn-xs btn-danger"  %>
     <% end %>
-    <%= link_to 'Back to articles' , articles_path, class: "btn btn-xs btn-primary"  %>
+    <%= link_to 'Back to articles' , articles_path, class: "btn btn-xs btn-primary  btn-raised"  %>
   </div>
 </div>
 
